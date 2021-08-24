@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Lance Blum">
+    <meta name="description" content="Home page of Nightwauve Radio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png"
+        href="https://synthspiria.com/wp-content/uploads/2017/04/cropped-synthspiria-favicon-1.png"
+        aria-label="Logo of Synthspiria">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/musicPlayer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" Title="Back to the Homepage">
+            <img src="https://synthspiria.com/wp-content/uploads/2017/04/cropped-synthspiria-favicon-1.png"
+                alt="Logo of Synthspiria" width="30" height="24" class="d-inline-block align-top">
+            Nightwauve Radio &nbsp;
+        </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="details.html" title="Go to Our Mission!">Our Mission</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" title="Open Bookmarks">
+                        Bookmarks
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="details.html#bookmark" title="Go to Why Synthwave?">Why I did it</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </a>
+    </div>
+</nav>
+<body>
+    <form method="GET" action="https://itunes.apple.com/search">
+    <input class="button" type ="text" id="searchbar" placeholder="Search for music...">
+    <button id="button"></button>
+    </form>
+
+    <div id="records">
+
+    </div>
+
+<div class="scene" id="blurScene">
+        <div class="container">
+            <div class="sun1"></div>
+            <div class="band" style="animation-delay: -0s"></div>
+            <div class="band" style="animation-delay: -1s"></div>
+            <div class="band" style="animation-delay: -2s"></div>
+            <div class="band" style="animation-delay: -3s"></div>
+            <div class="band" style="animation-delay: -4s"></div>
+            <div class="band" style="animation-delay: -5s"></div>
+            <div class="band" style="animation-delay: -6s"></div>
+            <div class="band" style="animation-delay: -7s"></div>
+            <div class="band" style="animation-delay: -8s"></div>
+            <div class="band" style="animation-delay: -9s"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li class="copyRight">&copy; 2021 Lance Blum</li>
+            <li class="contactUs"><a href="#" title="Contact us!">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+        <script src="musicPlayer.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js%22%3E"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js%22%3E"></script>
+
+</body>
+</html>

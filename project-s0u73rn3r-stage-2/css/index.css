@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+ 
+}
+
+@font-face{
+  font-family: 'RoadRage';
+  src: url(../font/Road_Rage.otf) format("opentype");
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #112;
+  overflow:hidden ;
+  scroll-behavior: smooth;
+  
+}
+body{
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 18px;
+}
+.scroll{
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+a{
+    text-decoration: none;
+    color: fuchsia;
+}
+
+.navbar-brand{
+    font-family: 'RoadRage',sans-serif;
+    color: transparent;
+    background: linear-gradient(#000000 0%, #113e87 22%, #10cccc 50%, #000000 51%, #e21ddc 78%, #e21ddc 78%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.dropdown-menu{
+    background: linear-gradient(#ffcb55 0, #ff0488 100%);
+    -webkit-animation: hue-rotate 60s ease-in-out infinite 5s;
+    animation: hue-rotate 60s ease-in-out infinite 5s;
+
+}
+.dropdown-item{
+    color: white;
+    z-index: 5;
+}
+nav{
+    background: linear-gradient(#ffcb55 0, #ff0488 100%);
+
+    text-shadow: 5px 5px 10px #000;
+}
+
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+
+h1,h3 {
+    margin: 0;
+    line-height: 1;
+  }
+ 
+
+  h1 {
+    display: inline-block;
+    font-family: 'RoadRage',sans-serif;
+    
+  }
+
+  h3 {
+    display: inline-block;
+    font-family: 'Damion', cursive;
+  }
+  .topic > h3{
+      padding-top: .5rem;
+  }
+  #diffColor{
+    background: -webkit-linear-gradient(#cc2b5e, #753a88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #title{
+    display: flex;
+    position: relative;
+    left: .5%;
+    top: 57%;
+    justify-content: center;
+    z-index: 3;
+  }
+  #title h1 {
+    position: relative;
+    font-size: 3.2em;
+    z-index: 0;
+    text-align: center;
+    transform: skewY(-8deg);
+  }
+  #title h1 span {
+    color: transparent;
+    background: linear-gradient(#000000 0%, #113e87 22%, #10cccc 50%, #000000 51%, #e21ddc 78%, #e21ddc 78%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #title h3 {
+    position: absolute;
+    top: 40%;
+    text-align: right;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    transform: skewY(-10deg);
+    z-index: 0;
+    color: #ee91ae;
+    text-shadow: 1px 1px #fff, -1px -1px #fff, -1px 1px #fff, 1px -1px #fff, 1px 0px #fff, -1px 0px #fff, 0px -1px #fff, 0px 1px #fff, 0px 0px 12px #ee91ae;
+  }
+
+  .footer {
+    position: fixed;
+    right: 25%;
+    bottom: 0;
+    width: 50%;
+    background-color: #112;
+    color: white;
+    text-align: left;
+    border-top: 1px groove ;
+    font-family: sans-serif;
+  }
+  .footer li{
+      list-style-type: none;
+      display: inline;
+  }
+  .contactUs a{
+      float: right;
+      text-decoration: none;
+      color: white;
+  }
+  .contactUs a:hover{
+      color: fuchsia;
+  }
+
+  .info {
+      position: absolute;
+      z-index: 1;
+      width: 37vh;
+      padding: 3px;
+  }
+  .songPlayer{
+    padding: 6px;
+    opacity: .6;
+  }
+
+  .moreInfo{
+      position: absolute;
+      
+      z-index: 1;
+      padding: 3px;
+  }
+
+  .scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #112;
+    z-index: 0;
+    position: fixed;
+    }
+    #blurScene{
+      filter: blur(3px);  
+    }
+  .container {
+    position: relative;
+    height: 50vw;
+    width: 50vw;
+    overflow: hidden;
+    z-index: 0;
+    background: transparent;
+    }
+  .sun1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(transparent 65%, #ff0488 100%), linear-gradient(#ffcb55 0, #ff0488 100%);
+    border-radius: 50%;
+    -webkit-animation: hue-rotate 60s ease-in-out infinite 5s;
+    animation: hue-rotate 60s ease-in-out infinite 5s;
+    }
+  .band {
+    position: absolute;
+    bottom: -6vw;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    background: #112;
+    -webkit-animation: wave 10s linear infinite;
+    animation: wave 10s linear infinite;
+    }
+
+    ::-webkit-scrollbar {
+    width: 20px;
+    }
+        
+    ::-webkit-scrollbar-thumb {   
+    border-radius: 5px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffcb55),to(#ff0488));
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+    }
+        
+    ::-webkit-scrollbar-track {     
+    background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17);
+    }
+
+
+
+    
+    @-webkit-keyframes wave {
+        0% {
+          transform: translateY(0) scaleY(1);
+        }
+        100% {
+          transform: translateY(-36vw) scaleY(0);
+        }
+      }
+      
+      @keyframes wave {
+        0% {
+          transform: translateY(0) scaleY(1);
+        }
+        100% {
+          transform: translateY(-36vw) scaleY(0);
+        }
+      }
+      @-webkit-keyframes hue-rotate {
+        0% {
+          filter: hue-rotate(360deg);
+        }
+        100% {
+          filter: hue-rotate(0deg);
+        }
+      }
+      @keyframes hue-rotate {
+        0% {
+          filter: hue-rotate(360deg);
+        }
+        100% {
+          filter: hue-rotate(0deg);
+        }
+      }
+
+
+
+
+      @media(min-width: 768px)
+      {
+        .container{
+          height: 30vw;
+          width: 30vw;
+        }
+        .sun1{
+          height: 30vw;
+          width: 30vw;
+        }
+
+
+
+
+
+
+
+
+        @-webkit-keyframes wave {
+          0% {
+            transform: translateY(0) scaleY(1);
+          }
+          100% {
+            transform: translateY(-24vw) scaleY(0);
+          }
+        }
+        
+        @keyframes wave {
+          0% {
+            transform: translateY(0) scaleY(1);
+          }
+          100% {
+            transform: translateY(-24vw) scaleY(0);
+          }
+      }
+    }
+
+
+@media(min-width: 768px){
+  #title h1 {
+    top:1px;
+    font-size: 5rem;
+  }
+  #title h3{
+    top: 75%;
+    font-size: 2rem;
+  }
+  .moreInfo{
+    position: relative;
+    float: right;
+    right: 0;
+    z-index: 1;
+    padding: 3px;
+}
+}
